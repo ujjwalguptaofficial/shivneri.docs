@@ -6,12 +6,12 @@
       <a href="https://ujjwalguptaofficial.github.io/">Ujjwal Gupta</a>
     </div>
     <v-layout row wrap>
-      <v-flex xs12 sm12 md4>
+      <!-- <v-flex xs12 sm12 md4>
         <h5>
-          <a target="_blank" href="/sponsor">Help fortjs Grow</a>
+          <a target="_blank" href="/sponsor">Help Shivneri Grow</a>
         </h5>
-        <p>fortjs is an open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing.</p>
-      </v-flex>
+        <p>Shivneri is an open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing.</p>
+      </v-flex> -->
       <v-flex xs12 sm12 md4>
         <h5>
           <a target="_blank" href="/help">Need Help</a>
@@ -30,7 +30,7 @@
         <h5>
           <a target="_blank" href="/community">Community</a>
         </h5>
-        <p>Be a part of fortjs community and help other people in learning fortjs, using it in a best way and making fortjs better.</p>
+        <p>Be a part of Shivneri community and help other people in learning Shivneri, using it in a best way and making Shivneri better.</p>
       </v-flex>
     </v-layout>
   </div>

@@ -12,7 +12,6 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_googleanalytics_844d373c from 'nuxt_plugin_googleanalytics_844d373c' // Source: ./google-analytics.js (ssr: false)
 import nuxt_plugin_vuetify_512965c0 from 'nuxt_plugin_vuetify_512965c0' // Source: ../code/plugins/vuetify.js
 
 // Component: <no-ssr>
@@ -153,10 +152,6 @@ async function createApp(ssrContext) {
   // Plugin execution
 
   if (typeof nuxt_plugin_vuetify_512965c0 === 'function') await nuxt_plugin_vuetify_512965c0(app.context, inject)
-
-  if (process.client) {
-    if (typeof nuxt_plugin_googleanalytics_844d373c === 'function') await nuxt_plugin_googleanalytics_844d373c(app.context, inject)
-  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {

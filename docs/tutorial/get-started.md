@@ -4,7 +4,7 @@ Keywords: "introduction, get started, fort-creator Shivneri, crystal"
 Description: "Shivneri introduction & how to use."
 ---
 
-In this get-started tutorial we will see how to setup Shivneri and create routes.
+In this get-started tutorial we will see how to setup Shivneri and create some simple end point. You can see/download code of this get started tutorial here - [https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo)
 
 ## Create a App
 
@@ -14,7 +14,7 @@ this will create a folder "shivneri-demo" which contains folder structure and so
 
 ## Install Shivneri
 
-Add below code in shard.yml
+<br>Add below code in shard.yml
 
 ```
 dependencies:
@@ -28,7 +28,7 @@ Now install Shivneri by runing command - `shards install`
 
 ## Initiate Shivneri
 
-Paste below code in file src/shivneri-demo.cr
+<br>Paste below code in file src/shivneri-demo.cr
 
 ```
 # TODO: Write documentation for `Shivneri::Demo`
@@ -48,7 +48,7 @@ Above code require shivneri and start the app by calling "open" api. We don't ha
 
 ## Create folders for Shivneri
 
-Shivneri is a MVC framework which means you gotta create a controller for writing your logic So let's create a folder controllers inside src.
+<br>Shivneri is a MVC framework which means you gotta create a controller for writing your logic So let's create a folder controllers inside src.
 
 Now add a file default_controller.cr inside folder controllers & paste below code
 
@@ -66,14 +66,14 @@ end
 ```
 
 In the above code - 
-* We have created a class "DefaultController" which inherits another class "Shivneri::Controller". This will make class "DefaultController" a controller class.
+* We have created a class "DefaultController" which inherits class "Shivneri::Controller". This will make class "DefaultController" a controller class.
 
 *  We have added method "index" which returns http result "Welcome to Shivneri" by calling text_result method . The method is known as worker in Shivneri because it does some work & return result. We have marked it as worker by using annotation 'DefaultWorker'.
 
 *  Annotation "DefaultWorker" marks method index as worker & also add route "/" with http methods "GET".
 
 ## Activate Controller - add controller as route
-
+<br>
 The added controller is not activated yet. You need to activate it by adding it to routes list.
 
 Paste below code in file src/shivneri-demo.cr
@@ -104,7 +104,7 @@ Browse the url - <a href="http://localhost:4000" target="_blank">http://localhos
 You will see result "Welcome to Shivneri" which is what we are returning from method "index".
 
 ## Let's add some more worker
-
+<br>
 ### Returning json
 
 ```
@@ -134,13 +134,13 @@ def json
 end
 ```
 
-Let's reload our app again & open the end point - http://localhost:4000/json
+Let's reload our app again & open the end point - <a href="http://localhost:4000/json" target="_blank">http://localhost:4000/json</a>
 
 You will see your result as json. 
 
 ### access body data
 
-body is member of controller which means you can access it directly using "body" or "self.body". body stores data in form of hash, so you can use hash methods for it.
+<br>body is member of controller which means you can access it directly using "body" or "self.body". body stores data in form of hash, so you can use hash methods for it.
 
 Let's create a method body which will retrieve name, address from body and return as json result. 
 
@@ -156,9 +156,11 @@ def get_body
 end
 ```
 
+Send a post request to the end point - <a href="http://localhost:4000/get_body" target="_blank">http://localhost:4000/get_body</a> and you will see result returned from this method.
+
 ### Change route
 
-By default method name is route name but you can customize it using annotation "Route". Let's change above method "get_body" to route "/body"
+<br>By default method name is route name but you can customize it using annotation "Route". Let's change above method "get_body" to route "/body"
 
 ```
 @[Worker]
@@ -173,3 +175,6 @@ def get_body
 end
 ```
 
+Now "get\_body" is not visible which means when you will send a request to "http://localhost:4000/get_body" , you will get http status code 404. 
+
+But our newly configured route "/body" is available. Send a post request to the end point - <a href="http://localhost:4000/body" target="_blank">http://localhost:4000/body</a> and you will see result returned from this method.

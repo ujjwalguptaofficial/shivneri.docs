@@ -128,7 +128,7 @@ export default class Tutorial extends VueWithRoute {
 
   head() {
     return {
-      title: `FortJs - ${this.pageTitle}`,
+      title: `Shivneri - ${this.pageTitle}`,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
