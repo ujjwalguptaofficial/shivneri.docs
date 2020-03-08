@@ -4,7 +4,7 @@ Keywords: "route, customize, options, Shivneri, crystal"
 Description: "Different types of route and how to customize them in Shivneri"
 ---
 
-Shivneri is a MVC framework which means any route will target a class method. So route in Shivneri has two parts - 
+Shivneri is a MVC framework which means any route will target a controller method. So route in Shivneri has two parts - 
 
 * Controller - A class
 * Worker - A method inside a class

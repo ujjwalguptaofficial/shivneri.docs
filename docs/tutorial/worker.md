@@ -4,10 +4,10 @@ Keywords: "worker, route, controller method, shivneri, crystal"
 Description: "Description about worker in shivneri"
 ---
 
-Worker is a method which does particular task and return the final result. 
+Worker is a method inside a controller which does particular task and return the final result. 
 
 <br>
-Since a worker is part of controller, it have the access to all the things which a controller has i.e - 
+Since a worker is part of controller, it have the access to all the things which a controller has - 
 
 * Query string data - `query`
 * Post data - `post`
@@ -49,7 +49,7 @@ Lets consider that controller - 'UserController' is associated with path '/user'
 
 So what these annotations - `Worker` and `DefaultWorker` do ?
 
-* **Worker** - method having annotation Worker is marked as end point with route as "/#{method_name}" and all http methods (GET,POST etc). For our example - route will be : "/get_user".
+* **Worker** - method having annotation Worker is marked as end point with route as "/#{method_name}" and all http methods (GET,POST etc). For our example - route will be : "/get\_user".
 
 * **DefaultWorker** - method having annotation DefaultWorker is added to route with one http method GET and route is "/".
 
@@ -57,5 +57,5 @@ So what these annotations - `Worker` and `DefaultWorker` do ?
 So in the above example, when url will be - 
 
 * abc.com/user - method default will be called.
-* abc.com/user/get_user - method get_user will be called.
+* abc.com/user/get\_user - method get\_user will be called.
 
