@@ -24,9 +24,12 @@ jobs:
       
     # Merge gh-pages with master
     - name: merge
-      run: |
-        git checkout gh-pages
-        git merge master
+      uses: devmasx/merge-branch@v1.1.0
+      with:
+          label_name: 'merged in develop'
+          target_branch: 'gh-pages'
+      env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     # Runs a single command using the runners shell
     - name: Build
