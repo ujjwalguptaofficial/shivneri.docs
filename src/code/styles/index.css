@@ -55,8 +55,9 @@
 }
 
 #divLogoContainer .app-name {
-    font-size: 200px;
+    font-size: 135px;
     font-family: -webkit-body;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
