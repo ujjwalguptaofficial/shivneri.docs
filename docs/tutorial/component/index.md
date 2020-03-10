@@ -4,7 +4,7 @@ Keywords: "components, modularize, app, Shivneri, crystal"
 Description: "Description about components of Shivneri"
 ---
 
-Components are most important part of fort application. They are independent & every component has its own lifecycle and scope. It helps you to modularize your app & reutilize codes.
+Components are most important part of Shivneri. They are independent & every component has its own lifecycle and scope. It helps you to modularize your app & reutilize codes.
 
 There are three types of components - 
 

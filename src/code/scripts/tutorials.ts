@@ -50,26 +50,26 @@ export const tutorialLinks = [
     // },
     {
         id: 10,
-        text: "Components",
-        url: "components",
+        text: "Component",
+        url: "component",
         childs: [
             {
                 id: 1,
                 text: "Wall",
-                url: "wall"
+                url: "component/wall"
             },
             {
                 id: 2,
                 text: "Shield",
-                url: "shield"
+                url: "component/shield"
             },
             {
                 id: 3,
                 text: "Guard",
-                url: "guard"
+                url: "component/guard"
             }
         ]
-    }, 
+    },
     // {
     //     id: "decorator",
     //     text: "Decorators",
