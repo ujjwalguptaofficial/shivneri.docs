@@ -12,7 +12,7 @@ Wall has two lifecycle hook -
 
 * **entered** - called when a request has entered inside the Shivneri (app). If this events returns nil means request is allowed to enter otherwise rejects with the result returned.
 
-    If there are multiple walls then "entered" is called in order as they are defined.
+    If there are multiple walls then "entered" is called in same order as they are defined.
     
 * **finished** - called when a controller is executed & response is about to be sent. This is an optional event & Result returned from this event is ignored.
 
