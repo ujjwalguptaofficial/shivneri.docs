@@ -21,8 +21,6 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      
-    # Merge gh-pages with master
     - name: merge
       uses: devmasx/merge-branch@v1.1.0
       with:
@@ -36,6 +34,7 @@ jobs:
       run: |
         cd src 
         npm install
+        npm rebuild node-sass
         npm run deploy
 
     # Runs a set of commands using the runners shell
