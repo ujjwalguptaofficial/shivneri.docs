@@ -32,7 +32,7 @@ jobs:
         git fetch
         git checkout origin/gh-pages
         git fetch origin
-        git merge origin/master
+      #  git merge origin/master
 
     # Runs a single command using the runners shell
     - name: Build
