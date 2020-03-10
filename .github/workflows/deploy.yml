@@ -49,8 +49,12 @@ jobs:
     
     - name: Commit Changes
       run: |
-        git config --global user.name ${GITHUB_ACTOR}
-        git config --global user.email "ujjwalkumargupta44@gmail.com"
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
         git add --all
         git commit -m "deploy to gh-pages"
-        git push origin gh-pages
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
