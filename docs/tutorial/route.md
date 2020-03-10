@@ -82,7 +82,7 @@ So, When url will be - "abc.com/user/add" then add method will be called.
 
 **<u>Customizing route</u>**
 <br><br>
-By default route is name of method, but you can customize the route using annotation "Route".
+By default route is name of method, but you can customize it by using annotation "Route".
 
 ```
 class UserController < Shivneri::Controller 
@@ -171,7 +171,7 @@ e.g - "abc.com/user/add/2", "abc.com/user/add/hi", "abc.com/user/add/1000" etc.
 
 Basically a part of the url is a variable which can hold any value.
 
-You can declare a variable in a route by using `{}`. Let's see - 
+You can declare a variable in a route by using `{}` . 
 
 ```
 class UserController < Shivneri::Controller 

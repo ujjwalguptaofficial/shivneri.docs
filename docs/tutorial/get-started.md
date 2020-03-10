@@ -97,7 +97,7 @@ module Shivneri::Demo
 end
 ```
 
-In the above code - we have only added "DefaultController" with path "/\*" in routes list. Now Shivneri knows that for route "/\*" - "DefaultController" needs to be executed.
+In the above code - we have only added "DefaultController" with path "/\*" in routes list. Now Shivneri knows that for route "/\*" (/\* means for any route unless explicitly defined) - "DefaultController" needs to be executed.
 
 Now let's test our end point by browsing url - <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
 
