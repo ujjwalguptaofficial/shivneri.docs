@@ -4,7 +4,7 @@ Keywords: "introduction, get started, fort-creator Shivneri, crystal"
 Description: "Shivneri introduction & how to use."
 ---
 
-In this get-started tutorial we will see how to setup Shivneri and create some simple end point. You can see/download code of this get started tutorial here - [https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo)
+In this get-started tutorial we will see how to setup Shivneri and create some simple end point. You can see/download code of this get started tutorial here -  <a target="_blank" href="https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo">Shivneri demo</a>
 
 ## Create a App
 
@@ -44,11 +44,11 @@ end
 
 ```
 
-Above code require shivneri and start the app by calling "open" api. We don't have any routes for now, so let's create it next step.
+Above code require shivneri and start the app by calling "open" api. We don't have any routes for now, so let's create it in next step.
 
 ## Create folders for Shivneri
 
-<br>Shivneri is a MVC framework which means you gotta create a controller for writing your logic So let's create a folder controllers inside src.
+<br>Shivneri is a MVC framework which means you gotta create a controller for writing your logic, so let's create a folder controllers inside src.
 
 Now add a file default_controller.cr inside folder controllers & paste below code
 
@@ -68,7 +68,7 @@ end
 In the above code - 
 * We have created a class "DefaultController" which inherits class "Shivneri::Controller". This will make class "DefaultController" a controller class.
 
-*  We have added method "index" which returns http result "Welcome to Shivneri" by calling text_result method . The method is known as worker in Shivneri because it does some work & return result. We have marked it as worker by using annotation 'DefaultWorker'.
+*  We have added method "index" which returns http result "Welcome to Shivneri" by calling text_result method . Controller methods which acts as end point is known as worker in Shivneri because it does some work & return result. We have marked it as worker by using annotation 'DefaultWorker'.
 
 *  Annotation "DefaultWorker" marks method index as worker & also add route "/" with http methods "GET".
 
@@ -97,9 +97,9 @@ module Shivneri::Demo
 end
 ```
 
-In the above code we have added "DefaultController" with path "/*" in routes list.
+In the above code - we have only added "DefaultController" with path "/\*" in routes list. Now Shivneri knows that for route "/\*" - "DefaultController" needs to be executed.
 
-Browse the url - <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
+Now let's test our end point by browsing url - <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
 
 You will see result "Welcome to Shivneri" which is what we are returning from method "index".
 
@@ -120,7 +120,7 @@ end
 
 The above code create a tuple & call json_result which will convert the tuple to http result in the form of json. 
 
-But the above added method won't work because its not marked as Worker. Let's mark this method as worker by using annotation "Worker", so our code looks like this -
+But the above added method won't work because its not marked as Worker. Let's mark this method as worker by using annotation "Worker". Now our code looks like this -
 
 ```
 @[Worker]
@@ -140,7 +140,7 @@ You will see your result as json.
 
 ### access body data
 
-<br>body is member of controller which means you can access it directly using "body" or "self.body". body stores data in form of hash, so you can use hash methods for it.
+<br>body is member of controller which means you can access it directly using "body" or "self.body". body stores data in form of hash, so you can use hash syntax for retrieving body data.
 
 Let's create a method body which will retrieve name, address from body and return as json result. 
 
@@ -178,3 +178,9 @@ end
 Now "get\_body" is not visible which means when you will send a request to "http://localhost:4000/get_body" , you will get http status code 404. 
 
 But our newly configured route "/body" is available. Send a post request to the end point - <a href="http://localhost:4000/body" target="_blank">http://localhost:4000/body</a> and you will see result returned from this method.
+
+We hope you have understood this get started article. Now lets make something awesome.
+
+#### * Check it out some tutorial & examples for more understanding -
+
+* [Create Rest Api](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/rest)
