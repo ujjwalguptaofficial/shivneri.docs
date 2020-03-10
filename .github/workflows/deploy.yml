@@ -43,7 +43,9 @@ jobs:
         
     # Checkout branch gh-pages
     - name: Checkout gh-pages
-      run: git checkout origin/gh-pages
+      run: |
+        git fetch
+        git checkout origin/gh-pages
 
     # Runs a single command using the runners shell
     - name: Build
