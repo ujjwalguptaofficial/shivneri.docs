@@ -97,19 +97,22 @@ export const tutorialLinks = [
             //     id: 2,
             //     text: "Session",
             //     url: "session"
-            // }, {
+            // }, 
+            // {
             //     id: 3,
             //     text: "Component Data",
             //     url: "data"
-            // }, {
-            //     id: 4,
-            //     text: "Route Param",
-            //     url: "param"
-            // }, {
-            //     id: 5,
-            //     text: "Query String",
-            //     url: "query"
-            // }, 
+            // },
+            {
+                id: 4,
+                text: "Route Param",
+                url: "param"
+            },
+            {
+                id: 5,
+                text: "Query String",
+                url: "query"
+            },
             {
                 id: 6,
                 text: "Post Data",
