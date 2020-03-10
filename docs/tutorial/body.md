@@ -6,7 +6,7 @@ Description: "Shivneri body member details"
 
 `body` is class member of Guard and Controller. It is used to access body data sent in http post request. 
 
-body data is stored in form of hash, so you can use hash syntax for accessing body data.
+body data is stored in form of hash (key is type of string & value is type of JSON::Any), so you can use hash syntax for accessing body data.
 
 ```
 class UserController < Shivneri::Controller

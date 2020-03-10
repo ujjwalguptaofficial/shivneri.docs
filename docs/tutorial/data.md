@@ -7,28 +7,21 @@ Description: "How to pass & access components data"
 
 `data` is class member of Wall, Guard , Shield and Controller. It is used to transfer data from one component to another and finally to worker.
 
+data is stored in form of hash (key is type of string & value is type of JSON::Any), so you can use hash syntax for accessing body data.
+
 e.g - Let's see how we can pass data from wall to controller - 
 
 ### Wall
 
 ```
-import { Wall, textResult } from "Shivneri";
-export class RequestLogger extends Wall {
+class WallWithoutOutgoing < Wall
 
-    private getIP(req) {
-        var ip = (req.headers['x-forwarded-for'] || '').split(',').pop() ||
-            req.connection.remoteAddress ||
-            req.socket.remoteAddress ||
-            req.connection.socket.remoteAddress
-        return ip;
-    }
-
-    async onIncoming() {
-        // here we are sending ip to other components
-        this.data.ip = this.getIP(this.request);
-        return null;
-    }
-}
+    def entered
+        self["ip"] = ""
+      return nil_result
+    end
+    
+end
 ```
 
 The above wall is using `data` to pass ip to other components.
