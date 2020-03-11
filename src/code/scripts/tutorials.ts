@@ -33,11 +33,12 @@ export const tutorialLinks = [
     //     id: "validation",
     //     text: "Validation",
     //     url: "validation"
-    // }, {
-    //     id: 8,
-    //     text: "Authentication",
-    //     url: "authentication"
-    // },
+    // }, 
+    {
+        id: 8,
+        text: "Authentication",
+        url: "authentication"
+    },
     // {
     //     id: 9,
     //     text: "Logger",
