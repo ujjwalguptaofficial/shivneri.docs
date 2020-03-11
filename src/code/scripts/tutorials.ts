@@ -94,11 +94,12 @@ export const tutorialLinks = [
             //     id: 1,
             //     text: "Cookie",
             //     url: "cookie"
-            // }, {
-            //     id: 2,
-            //     text: "Session",
-            //     url: "session"
             // }, 
+            {
+                id: 2,
+                text: "Session",
+                url: "session"
+            },
             // {
             //     id: 3,
             //     text: "Component Data",

@@ -20,6 +20,8 @@ class UserController < Shivneri::Controller
         name = query["name"] # this syntax is not recommended because if key is not found then exception will be thrown
 
         user_id = query["userid"]?
+
+        text_result("ok")
     end
 end
 ```
