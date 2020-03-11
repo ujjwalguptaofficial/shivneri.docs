@@ -20,7 +20,7 @@
 export default {
   head() {
     return {
-      title: `Component based MVC web framework for nodejs`,
+      title: `Component based MVC web framework for crystal`,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
