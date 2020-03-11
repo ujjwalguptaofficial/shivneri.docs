@@ -39,11 +39,11 @@ export const tutorialLinks = [
         text: "Authentication",
         url: "authentication"
     },
-    // {
-    //     id: 9,
-    //     text: "Logger",
-    //     url: "logger"
-    // },
+    {
+        id: 9,
+        text: "Logger",
+        url: "logger"
+    },
     // {
     //     id: "middleware",
     //     text: "Middleware",

@@ -52,7 +52,7 @@ You can see - we have three worker.
 * **do_login** - is  used to login into the sytem through POST request.This method retrieve email and password from body and check whether email/password is correct. And if correct - it creates the session.
 
 <br>
-Once the session has been set for a user. It can be accessed anywhere in the system (any controller/worker) using - `session["email"]`  or `session.is_exist("email")`
+Once the [session](/tutorial/session) has been set for a user. It can be accessed anywhere in the system.
 <br>
 
 In order to not allow unauthenticated user to access restricted method : we can check in every worker - If session is set or not and then based on that take actions.
