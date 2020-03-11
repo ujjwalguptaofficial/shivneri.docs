@@ -6,7 +6,7 @@
                 <nuxt />
             </v-container>
             <v-container fluid id="footer">
-                <Footer></Footer>
+                <!-- <Footer></Footer> -->
             </v-container>
         </v-content>
     </v-app>
