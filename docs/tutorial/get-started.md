@@ -99,10 +99,14 @@ module Shivneri::Demo
 end
 ```
 
-In the above code - we have only added "DefaultController" with path "/\*" in routes list. Now Shivneri knows that for route "/\*" (/\* means for any route unless explicitly defined) - "DefaultController" needs to be executed.
+In the above code - we have added "DefaultController" with path "/\*" in routes list. Now Shivneri knows that for route "/\*" (/\* means for any route unless explicitly defined) - "DefaultController" needs to be executed.
 
-Now let's test our end point by browsing url - <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
+Now let's test our implementation -
 
+* Execute command - `crystal run src/shivneri-demo.cr`
+* browse url - <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
+
+<br>
 You will see result "Welcome to Shivneri" which is what we are returning from method "index".
 
 ## Let's add some more worker
