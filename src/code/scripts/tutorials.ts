@@ -100,11 +100,11 @@ export const tutorialLinks = [
                 text: "Session",
                 url: "session"
             },
-            // {
-            //     id: 3,
-            //     text: "Component Data",
-            //     url: "data"
-            // },
+            {
+                id: 3,
+                text: "Component Data",
+                url: "component-data"
+            },
             {
                 id: 4,
                 text: "Route Param",

@@ -14,7 +14,7 @@ A shield has following member -
 
 * Query string data - `query`
 * Route parameter -  `param`
-* Data from other components -  `data`
+* Data from other components -  `[]`
 * Logger - `logger`
 * Cookie - `cookie`
 * Session - `session`

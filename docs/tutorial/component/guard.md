@@ -20,7 +20,7 @@ A guard has access to following -
 * Query string data - `query`
 * Post data - `post`
 * Route parameter -  `param`
-* Data from other components -  `data`
+* Data from other components -  `[]`
 * Logger - `logger`
 * Cookie - `cookie`
 * Session - `session`
