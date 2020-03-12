@@ -4,7 +4,7 @@ Keywords: "introduction, get started, fort-creator Shivneri, crystal"
 Description: "Shivneri introduction & how to use."
 ---
 
-In this get-started tutorial we will see how to setup Shivneri and create some simple end point. You can see/download code of this get started tutorial here -  <a target="_blank" href="https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo">Shivneri demo</a>
+In this get-started tutorial we will learn how to setup Shivneri and create some simple end point. You can see/download code of this get started tutorial here -  <a target="_blank" href="https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/shivneri-demo">Shivneri demo</a>
 
 ## Create a App
 
