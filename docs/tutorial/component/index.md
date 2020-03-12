@@ -4,7 +4,11 @@ Keywords: "components, modularize, app, Shivneri, crystal"
 Description: "Description about components of Shivneri"
 ---
 
-Components are most important part of Shivneri. They are independent & every component has its own lifecycle and scope. It helps you to modularize your app & reutilize codes.
+Components are most important part of Shivneri - it helps you to modularize your app & reutilize codes.
+
+<p class="highlight">
+Every component is independent & has its own lifecycle and scope.
+</p>
 
 There are three types of components - 
 
@@ -14,6 +18,7 @@ There are three types of components -
 
 3. [Guard](/tutorial/guard)
 
+Component are executed in heirarchy where Wall is at top, Shield is in middle & Guard in last. If there are multiple components then they are executed sequentially.
 
 <style>
 li{

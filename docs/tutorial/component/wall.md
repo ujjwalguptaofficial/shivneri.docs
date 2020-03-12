@@ -22,7 +22,7 @@ Wall has two lifecycle hook -
 A wall has access to following - 
 
 * Query string data - `query`
-* Data from other components -  `data`
+* Data from other components -  `[]`
 * Logger - `logger`
 * Cookie - `cookie`
 * Session - `session`

@@ -56,10 +56,12 @@ Now add a file default_controller.cr inside folder controllers & paste below cod
 module Shivneri::Demo
   module Controller
     class DefaultController < Shivneri::Controller
-      @[DefaultWorker]
-      def index
-        text_result "Welcome to Shivneri"
-      end
+
+        @[DefaultWorker]
+        def index
+          text_result "Welcome to Shivneri"
+        end
+
     end
   end
 end
