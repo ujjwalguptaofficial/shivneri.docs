@@ -10,13 +10,13 @@ There can be multiple wall for an app -
 
 Wall has two lifecycle hook -
 
-* **entered** - called when a request has entered inside the Shivneri (app). If this events returns nil means request is allowed to enter otherwise rejects with the result returned.
+* **incoming** - called when a request is entering inside the Shivneri (app). If this events returns nil means request is allowed to enter otherwise rejects with the result returned.
 
-    If there are multiple walls then "entered" is called in same order as they are defined.
+    If there are multiple walls then "incoming" is called in same order as they are defined.
     
-* **finished** - called when a controller is executed & response is about to be sent. This is an optional event & Result returned from this event is ignored.
+* **outgoing** - called when a controller is executed & response is about to be sent. This is an optional event & Result returned from this event is ignored.
 
-    If there are multiple walls then "finished" is called in reverse order as they are defined.
+    If there are multiple walls then "outgoing" is called in reverse order as they are defined.
 
 
 A wall has access to following - 
@@ -37,13 +37,15 @@ Wall is a class which inherits the class "Wall" from Shivneri.
 
 ```
 class AppWall < Wall
-    def entered
+    def incoming
+        logger.debug("request entering");
         if (some condition) # block request
             return text_result("This request is blocked by wall");
         end
+        return nil
     end
 
-    def finished
+    def outgoing
         # this events can be used to set headers or log datas etc
         logger.debug("request finished");
     end
@@ -55,3 +57,5 @@ Now you have defined the wall but in order to use this wall, you need to add it 
 ```
 Shivneri.walls = [AppWall]
 ```
+
+Take a look at [wall example](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/request-logger) - this example logs request coming & going and also maintains a request count.
