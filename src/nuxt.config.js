@@ -36,10 +36,10 @@ module.exports = {
   head: {
     title: "Shivneri - Component Based MVC Web Framework For crystal",
     meta: [
-      //   {
-      //   name: "google-site-verification",
-      //   content: "gFRrtV_TpZtZXXktE2jCL0C69py_TsCtorjh4GDae4U"
-      // },
+      {
+        name: "google-site-verification",
+        content: "K1BbSoQeqd0tQeqdvXzb0yrWJ42GSmJi6VUkj7M0NAs"
+      },
       {
         name: "theme-color",
         content: "#ffffff"
@@ -79,7 +79,7 @@ module.exports = {
         content: "crystal MVC Framework"
       }, {
         property: "og:url",
-        content: "http://fortjs.info/"
+        content: "https://shivneriforcrystal.com/"
       }, {
         property: "og:site_name",
         content: "Shivneri"
@@ -100,7 +100,7 @@ module.exports = {
         content: "Component based MVC web framework for crystal targeting good code structures & modularity."
       }, {
         name: "twitter:image",
-        content: "http://fortjs.info/img/fort_js_logo_1200_630.png"
+        content: "https://shivneriforcrystal.com/img/fort_js_logo_1200_630.png"
       }
     ],
     link: [{
