@@ -4,7 +4,7 @@ Keywords: "validation, expect-body, expect-query, Shivneri, crystal"
 Description: "How to validate data in Shivneri using different components & decorators."
 ---
 
-Validation is an important part of any application & that's why Shivneri provides several components and decorators to help you write validation code in easy & standard way.
+Validation is an important part of any application & that's why Shivneri provides several components and decorators to help you write validation code in easy & modularized way.
 
 Let's see how - 
 
