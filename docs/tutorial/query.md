@@ -25,3 +25,19 @@ class UserController < Shivneri::Controller
     end
 end
 ```
+
+ ## to_tuple
+
+query has method `to_tuple` which takes `NamedTuple` type & returns a `NamedTuple` value. It extracts value from query string data & converts every value it into expected type.
+
+```
+class UserController < Shivneri::Controller
+       
+      @[Worker]
+      def full_name
+         data = query.to_tuple(NamedTuple(first_name: String, last_name: String))
+        return text_result("full name is #{data.first_name} #{data.last_name}")
+      end
+end
+```
+This method is helpful when you are extracting large query string data (have many keys). 
