@@ -196,9 +196,9 @@ module.exports = {
   }],
   modules: [
     "~/modules/typescript.js",
-    // ['@nuxtjs/google-analytics', {
-    //   id: process.env.GA_ID || 'UA-131290933-1'
-    // }]
+    ['@nuxtjs/google-analytics', {
+      id: process.env.GA_ID || 'UA-131290933-3'
+    }]
   ],
   axios: {}
 }
