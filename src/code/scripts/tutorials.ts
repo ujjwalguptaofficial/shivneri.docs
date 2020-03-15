@@ -20,6 +20,10 @@ export const tutorialLinks = [
         id: 4,
         text: 'Route',
         url: 'route'
+    }, {
+        id: "result",
+        text: 'Result',
+        url: 'result'
     },
     // {
     //     id: 5,
