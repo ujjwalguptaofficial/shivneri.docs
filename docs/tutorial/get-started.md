@@ -189,4 +189,5 @@ We hope you have understood this get started article. Now lets make something aw
 
 #### * Check it out some tutorial & examples for more understanding -
 
-* [Create Rest Api](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/rest)
+* [Create Rest Api](https://medium.com/shivneri-framework/rest-api-in-crystal-lang-using-shivneri-f70f1035a731)
+* [Rest Api example](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/rest)
