@@ -20,13 +20,14 @@
 export default {
   head() {
     return {
-      title: `Component based MVC web framework for crystal`,
+      title: `Component based MVC web framework for crystal lang`,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: "keywords",
           name: "keywords",
-          content: "component, node, es6, mvc, framework, typescript"
+          content:
+            "crystal lang, component based, framework, web development, software development"
         }
       ]
     };
