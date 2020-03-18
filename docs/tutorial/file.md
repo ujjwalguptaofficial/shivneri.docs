@@ -4,7 +4,9 @@ Keywords: "file, upload, Shivneri, crystal"
 Description: "Upload file in crystal using Shivneri"
 ---
 
-`file` is class member of Guard and Controller. It is used to access http request files.
+When a file is sent through post request, then it is available using `file`.
+
+`file` is class member of Guard and Controller. It contains all files & their information which is sent using http post request.
 
 Let's see few examples 
 
