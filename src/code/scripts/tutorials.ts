@@ -95,6 +95,10 @@ export const tutorialLinks = [
         text: "Websocket",
         url: "websocket",
         childs: [{
+            id: "clients",
+            text: "Clients",
+            url: "websocket/clients"
+        }, {
             id: "groups",
             url: "websocket/groups",
             text: "Groups"
