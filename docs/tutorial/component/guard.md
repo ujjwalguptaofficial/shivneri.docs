@@ -1,6 +1,6 @@
 ---
 Title: "Guard"
-Keywords: "guard, component, types, Shivneri, crystal"
+Keywords: "guard, component, types, Shivneri, crystal lang"
 Description: "Description about guard component in Shivneri"
 ---
 

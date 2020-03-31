@@ -1,6 +1,6 @@
 ---
 Title: "Initialize Controller"
-Keywords: "test, unit, initialize, Shivneri, crystal"
+Keywords: "test, unit, initialize, Shivneri, crystal lang"
 Description: "initialize is a method in a controller which initializes a controller."
 ---
 

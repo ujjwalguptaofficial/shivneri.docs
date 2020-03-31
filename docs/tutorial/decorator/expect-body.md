@@ -1,6 +1,6 @@
 ---
 Title: "Expect Body"
-Keywords: "body, secure body, validation, Shivneri, crystal"
+Keywords: "body, secure body, validation, Shivneri, crystal lang"
 Description: "This page tells about decorator ExpectBody & how to use this."
 ---
 

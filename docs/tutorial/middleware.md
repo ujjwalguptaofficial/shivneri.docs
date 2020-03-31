@@ -1,10 +1,10 @@
 ---
 Title: "Middleware"
-Keywords: "middleware, pattern, Shivneri, crystal"
+Keywords: "middleware, pattern, Shivneri, crystal lang"
 Description: "This page tells about how to use middleware paatern in Shivneri."
 ---
 
-Middleware is a technique which is heavily used in crystal frameworks like express etc. It is based on chain of responsibility pattern means one middleware will call another.
+Middleware is a technique which is heavily used in crystal lang frameworks like express etc. It is based on chain of responsibility pattern means one middleware will call another.
 
 <p class="highlight">Middleware are methods which has parameters - request, response and next callback.</p>
 

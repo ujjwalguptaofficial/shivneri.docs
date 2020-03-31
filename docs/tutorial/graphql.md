@@ -1,7 +1,7 @@
 ---
 Title: "GraphQl"
-Keywords: "graphql, integrate, Shivneri, crystal"
-Description: "How to use graphql in crystal using Shivneri"
+Keywords: "graphql, integrate, Shivneri, crystal lang"
+Description: "How to use graphql in crystal lang using Shivneri"
 ---
 
 Shivneri provides a seperate package - [fort-graphql](https://github.com/ujjwalguptaofficial/Shivneri-graphql) for integration of graphql.

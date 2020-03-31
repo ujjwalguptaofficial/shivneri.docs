@@ -1,6 +1,6 @@
 ---
 Title: "Get Started"
-Keywords: "introduction, get started, fort-creator Shivneri, crystal"
+Keywords: "introduction, get started, fort-creator Shivneri, crystal lang"
 Description: "Shivneri introduction & how to use."
 ---
 
@@ -8,9 +8,9 @@ In this get-started tutorial we will learn how to setup Shivneri and create some
 
 ## Create a App
 
-Execute command - `crystal init app shivneri-demo`
+Execute command - `crystal lang init app shivneri-demo`
 
-this will create a folder "shivneri-demo" which contains folder structure and some files to run a crystal app.
+this will create a folder "shivneri-demo" which contains folder structure and some files to run a crystal lang app.
 
 ## Install Shivneri
 
@@ -103,7 +103,7 @@ In the above code - we have added "DefaultController" with path "/\*" in routes 
 
 Now let's test our implementation -
 
-* Execute command - `crystal run src/shivneri-demo.cr`
+* Execute command - `crystal lang run src/shivneri-demo.cr`
 * browse url - <a href="http://localhost:4000" target="_blank">http://localhost:4000</a>
 
 <br>
@@ -189,5 +189,5 @@ We hope you have understood this get started article. Now lets make something aw
 
 #### * Check it out some tutorial & examples for more understanding -
 
-* [Create Rest Api](https://medium.com/shivneri-framework/rest-api-in-crystal-lang-using-shivneri-f70f1035a731)
+* [Create Rest Api](https://medium.com/shivneri-framework/rest-api-in-crystal lang-lang-using-shivneri-f70f1035a731)
 * [Rest Api example](https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/rest)

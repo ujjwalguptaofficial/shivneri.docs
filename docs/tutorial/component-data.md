@@ -1,6 +1,6 @@
 ---
 Title: "Pass data from one component to other"
-Keywords: "data, components, options, Shivneri, crystal"
+Keywords: "data, components, options, Shivneri, crystal lang"
 Description: "How to pass & access components data"
 ---
 

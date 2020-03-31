@@ -1,6 +1,6 @@
 ---
 Title: "Http Request"
-Keywords: "http request, type, options, Shivneri, crystal"
+Keywords: "http request, type, options, Shivneri, crystal lang"
 Description: "Type http request member description"
 ---
 

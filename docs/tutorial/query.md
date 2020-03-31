@@ -1,6 +1,6 @@
 ---
 Title: "Query"
-Keywords: "query string, variable, Shivneri, crystal"
+Keywords: "query string, variable, Shivneri, crystal lang"
 Description: "Accessing query string value in Shivneri"
 ---
 

@@ -1,6 +1,6 @@
 ---
 Title: "Param"
-Keywords: "param, route, customize, Shivneri, crystal"
+Keywords: "param, route, customize, Shivneri, crystal lang"
 Description: "parameterizing route in Shivneri"
 ---
 

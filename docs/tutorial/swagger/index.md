@@ -1,6 +1,6 @@
 ---
 Title: "Swagger"
-Keywords: "swagger, automatic generate, integrate, Shivneri, crystal"
+Keywords: "swagger, automatic generate, integrate, Shivneri, crystal lang"
 Description: "How to integrate swagger in Shivneri"
 ---
 

@@ -1,7 +1,7 @@
 ---
 Title: "Format Response"
-Keywords: "format response, multiple response, mime type, Shivneri, crystal"
-Description: "Formatting response in crystal using Shivneri"
+Keywords: "format response, multiple response, mime type, Shivneri, crystal lang"
+Description: "Formatting response in crystal lang using Shivneri"
 ---
 
 You can customize the format of your response and based on [content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation) Shivneri select the appropriate response. If an appropriate response is not found then a response with status code - 406 is returned.

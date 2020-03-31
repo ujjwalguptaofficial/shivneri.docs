@@ -1,6 +1,6 @@
 ---
 Title: "Bootstrap"
-Keywords: "bootstrap, initiate, start, Shivneri, crystal"
+Keywords: "bootstrap, initiate, start, Shivneri, crystal lang"
 Description: "Shivneri bootstrap information & how to bootstrap"
 ---
 

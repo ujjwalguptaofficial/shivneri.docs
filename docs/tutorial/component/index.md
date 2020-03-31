@@ -1,6 +1,6 @@
 ---
 Title: "Components"
-Keywords: "components, modularize, app, Shivneri, crystal"
+Keywords: "components, modularize, app, Shivneri, crystal lang"
 Description: "Description about components of Shivneri"
 ---
 

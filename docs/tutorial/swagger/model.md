@@ -1,6 +1,6 @@
 ---
 Title: "Swagger Model"
-Keywords: "swagger, automatic generate, integrate, Shivneri, crystal"
+Keywords: "swagger, automatic generate, integrate, Shivneri, crystal lang"
 Description: "Swagger model in Shivneri"
 ---
 

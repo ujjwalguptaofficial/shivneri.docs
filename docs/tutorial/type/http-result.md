@@ -1,6 +1,6 @@
 ---
 Title: "HttpResult"
-Keywords: "http result, type, options, Shivneri, crystal"
+Keywords: "http result, type, options, Shivneri, crystal lang"
 Description: "Type HttpResult member description"
 ---
 

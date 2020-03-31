@@ -1,6 +1,6 @@
 ---
 Title: "Http Format Result"
-Keywords: "http format result, type, options, Shivneri, crystal"
+Keywords: "http format result, type, options, Shivneri, crystal lang"
 Description: "HttpFormatResult type description"
 ---
 

@@ -1,6 +1,6 @@
 ---
 Title: "AppOption"
-Keywords: "app, options, configurtion, Shivneri, crystal"
+Keywords: "app, options, configurtion, Shivneri, crystal lang"
 Description: "Shivneri application configurations, options and details"
 ---
 

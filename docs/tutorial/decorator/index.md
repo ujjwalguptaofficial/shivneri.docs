@@ -1,6 +1,6 @@
 ---
 Title: "Decorator"
-Keywords: "route, worker, guard, shield, Shivneri, crystal"
+Keywords: "route, worker, guard, shield, Shivneri, crystal lang"
 Description: "This page tells about different decorator present in Shivneri."
 ---
 

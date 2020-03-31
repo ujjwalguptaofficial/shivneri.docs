@@ -1,7 +1,7 @@
 ---
 Title: "Dependency Injection"
-Keywords: "dependency injection, assign, singleton, Shivneri, crystal js"
-Description: "Dependency injection in crystal"
+Keywords: "dependency injection, assign, singleton, Shivneri, crystal lang js"
+Description: "Dependency injection in crystal lang"
 ---
 
 Shivneri provides "Assign" And "Singleton" decorator for dependency Injection. 

@@ -1,6 +1,6 @@
 ---
 Title: "Unit Test"
-Keywords: "test, unit, e2e, Shivneri, crystal"
+Keywords: "test, unit, e2e, Shivneri, crystal lang"
 Description: "Setting up unit test in Shivneri"
 ---
 
