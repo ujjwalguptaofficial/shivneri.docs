@@ -1,6 +1,6 @@
 ---
 Title: "Session"
-Keywords: "session, uses, example, Shivneri, crystal"
+Keywords: "session, uses, example, Shivneri, crystal lang"
 Description: "Using session in Shivneri"
 ---
 
@@ -77,7 +77,7 @@ class UserController < Shivneri::Controller
 end
 ```
 
-By default Shivneri stores all your session data in memory which means data will be lost when crystal process is stopped or restarted. 
+By default Shivneri stores all your session data in memory which means data will be lost when crystal lang process is stopped or restarted. 
 
 If you want to preserve your session values, then you need to store your value in a database or use any tools or service. 
 

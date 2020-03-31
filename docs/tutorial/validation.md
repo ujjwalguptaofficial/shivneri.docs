@@ -1,6 +1,6 @@
 ---
 Title: "Validation"
-Keywords: "validation, expect-body, expect-query, Shivneri, crystal"
+Keywords: "validation, expect-body, expect-query, Shivneri, crystal lang"
 Description: "How to validate data in Shivneri using different components & decorators."
 ---
 

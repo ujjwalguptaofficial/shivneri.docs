@@ -1,7 +1,7 @@
 ---
 Title: "Authentication"
-Keywords: "authentication, example, tutorial, Shivneri, crystal"
-Description: "How to authenticate in crystal using Shivneri"
+Keywords: "authentication, example, tutorial, Shivneri, crystal lang"
+Description: "How to authenticate in crystal lang using Shivneri"
 ---
  
 There are multiple ways to add authenticate to our app like -

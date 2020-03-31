@@ -1,6 +1,6 @@
 ---
 Title: "Socket.io"
-Keywords: "socket, integration, options, Shivneri, crystal"
+Keywords: "socket, integration, options, Shivneri, crystal lang"
 Description: "How to use socket.io in Shivneri"
 ---
 

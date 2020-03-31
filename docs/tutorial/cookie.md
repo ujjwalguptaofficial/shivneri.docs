@@ -1,7 +1,7 @@
 ---
 Title: "Cookie"
-Keywords: "cookie, http, manipulation, Shivneri, crystal"
-Description: "How to access Http Cookie in crystal using Shivneri"
+Keywords: "cookie, http, manipulation, Shivneri, crystal lang"
+Description: "How to access Http Cookie in crystal lang using Shivneri"
 ---
 
 `cookie` is class member of Wall, Guard , Shield and Controller.

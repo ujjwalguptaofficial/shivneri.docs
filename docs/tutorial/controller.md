@@ -1,6 +1,6 @@
 ---
 Title: "Controller"
-Keywords: "controller, section, Shivneri, crystal"
+Keywords: "controller, section, Shivneri, crystal lang"
 Description: "Description about controller in Shivneri"
 ---
 

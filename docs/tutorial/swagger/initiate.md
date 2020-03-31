@@ -1,6 +1,6 @@
 ---
 Title: "Swagger Initialization"
-Keywords: "swagger, automatic generate, integrate, Shivneri, crystal"
+Keywords: "swagger, automatic generate, integrate, Shivneri, crystal lang"
 Description: "Swagger integration in Shivneri"
 ---
 

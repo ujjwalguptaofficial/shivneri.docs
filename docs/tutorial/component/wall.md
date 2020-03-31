@@ -1,6 +1,6 @@
 ---
 Title: "Wall"
-Keywords: "wall, component, options, Shivneri, crystal"
+Keywords: "wall, component, options, Shivneri, crystal lang"
 Description: "Description about wall components & its uses"
 ---
 

@@ -1,6 +1,6 @@
 ---
 Title: "Worker"
-Keywords: "worker, route, controller method, shivneri, crystal"
+Keywords: "worker, route, controller method, shivneri, crystal lang"
 Description: "Description about worker in shivneri"
 ---
 

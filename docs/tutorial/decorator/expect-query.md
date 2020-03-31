@@ -1,6 +1,6 @@
 ---
 Title: "Expect Query"
-Keywords: "query, secure query, validation, Shivneri, crystal"
+Keywords: "query, secure query, validation, Shivneri, crystal lang"
 Description: "This page tells about decorator ExpectQuery & how to use this."
 ---
 

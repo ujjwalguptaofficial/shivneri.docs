@@ -1,7 +1,7 @@
 ---
 Title: "Custom Error Handler"
-Keywords: "customize error, handle error, Shivneri, crystal"
-Description: "How to customize error in crystal using Shivneri"
+Keywords: "customize error, handle error, Shivneri, crystal lang"
+Description: "How to customize error in crystal lang using Shivneri"
 ---
 
 In order to customize the error response , you need to create a class which extend class ErrorHandler and override the available methods.

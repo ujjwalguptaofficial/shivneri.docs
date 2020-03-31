@@ -1,6 +1,6 @@
 ---
 Title: "Http Response"
-Keywords: "http response, type, options, Shivneri, crystal"
+Keywords: "http response, type, options, Shivneri, crystal lang"
 Description: "Type HttpResponse member description"
 ---
 

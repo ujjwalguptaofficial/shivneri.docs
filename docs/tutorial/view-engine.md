@@ -1,6 +1,6 @@
 ---
 Title: "View Engine"
-Keywords: "view engine, cutomize, options, Shivneri, crystal"
+Keywords: "view engine, cutomize, options, Shivneri, crystal lang"
 Description: "Creating custom view engine in Shivneri"
 ---
 

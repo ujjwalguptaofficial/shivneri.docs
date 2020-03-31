@@ -1,10 +1,10 @@
 ---
 Title: "Session Provider"
-Keywords: "session provider, create session provider, options, Shivneri, crystal"
+Keywords: "session provider, create session provider, options, Shivneri, crystal lang"
 Description: "Customize session provider in Shivneri"
 ---
 
-By default Shivneri provides a memory session provider which stores all your data in memory & data is lost when crystal process is stopped or restarted.
+By default Shivneri provides a memory session provider which stores all your data in memory & data is lost when crystal lang process is stopped or restarted.
 
 You can create your own session provider & store it in database or wherever you want. A session provider is a class which extends the class - `SessionProvider`.
 

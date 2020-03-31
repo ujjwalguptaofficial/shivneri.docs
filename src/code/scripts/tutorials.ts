@@ -48,6 +48,7 @@ export const tutorialLinks = [
         text: "Logger",
         url: "logger"
     },
+
     // {
     //     id: "middleware",
     //     text: "Middleware",
@@ -89,6 +90,16 @@ export const tutorialLinks = [
     //         text: "ExpectQuery"
     //     }]
     // },
+    {
+        id: "websocket",
+        text: "Websocket",
+        url: "websocket",
+        childs: [{
+            id: "groups",
+            url: "websocket/groups",
+            text: "Groups"
+        }]
+    },
     {
         id: 11,
         text: "Concepts",

@@ -1,7 +1,7 @@
 ---
 Title: "File"
-Keywords: "file, upload, Shivneri, crystal"
-Description: "Upload file in crystal using Shivneri"
+Keywords: "file, upload, Shivneri, crystal lang"
+Description: "Upload file in crystal lang using Shivneri"
 ---
 
 When a file is sent through post request, then it is available using `file`.

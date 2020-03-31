@@ -1,6 +1,6 @@
 ---
 Title: "View"
-Keywords: "view, render, Shivneri, crystal"
+Keywords: "view, render, Shivneri, crystal lang"
 Description: "How to create & render views"
 ---
 

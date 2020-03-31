@@ -1,6 +1,6 @@
 ---
 Title: "Logger"
-Keywords: "logger, customization, Shivneri, crystal"
+Keywords: "logger, customization, Shivneri, crystal lang"
 Description: "How to use & customize logger in Shivneri"
 ---
 

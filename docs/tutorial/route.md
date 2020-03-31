@@ -1,6 +1,6 @@
 ---
 Title: "Route"
-Keywords: "route, customize, options, Shivneri, crystal"
+Keywords: "route, customize, options, Shivneri, crystal lang"
 Description: "Different types of route and how to customize them in Shivneri"
 ---
 

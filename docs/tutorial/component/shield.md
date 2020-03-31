@@ -1,6 +1,6 @@
 ---
 Title: "Shield"
-Keywords: "shield, component, modular, Shivneri, crystal"
+Keywords: "shield, component, modular, Shivneri, crystal lang"
 Description: "Description about Shield component & how to use"
 ---
 
