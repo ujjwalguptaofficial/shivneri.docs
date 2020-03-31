@@ -6,7 +6,7 @@ Description: "web socket groups in crystal lang using shivneri framework"
 
 You can create a group and add no of clients, so that all client in a group can communicate with each other similar to whatsapp groups or skype groups.
 
-`groups` is a property of clients which lets you groups any no of clients.
+`groups` is a member of `clients` which lets you groups any no of clients.
 
 <br>
 ## Add current client to a group
