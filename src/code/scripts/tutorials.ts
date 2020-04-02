@@ -149,6 +149,11 @@ export const tutorialLinks = [
                 text: "File upload",
                 url: "file"
             },
+            {
+                id: "file_server",
+                text: "File server",
+                url: "file-server"
+            },
             // {
             //     id: 8,
             //     text: "Dependency Injection",
