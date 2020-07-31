@@ -27,10 +27,12 @@ class UserController < Shivneri::Controller
 end
 ```
 
-But you might want to log everything in files or database, so want to customize the logger. Logger can be customized very easily by creating a class & extending `Logger` 
+## Customize Logger
+<br>
+logger can also be customized, so that log data can be saved in file or database. Logger can be customized very easily by creating a class & extending `Logger` 
 
 ```
-class CustomLogger extends Shivneri::FortLogger 
+class CustomLogger < Shivneri::Logger 
    
     def info(*args)
     
@@ -46,6 +48,14 @@ class CustomLogger extends Shivneri::FortLogger
     
 end
 ```
+
+Now you need to tell Framework to use your logger - 
+
+```
+Shivneri.logger = CustomLogger
+```
+
+
 
 Logger has following methods available - 
 
