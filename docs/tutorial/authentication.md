@@ -3,7 +3,7 @@ Title: "Authentication"
 Keywords: "authentication, example, tutorial, Shivneri, crystal lang"
 Description: "How to authenticate in crystal lang using Shivneri"
 ---
- 
+
 There are multiple ways to add authenticate to our app like -
 
 * Cookie based authentication
@@ -18,30 +18,29 @@ let's consider that our app has a default controller and it can be accessed by a
 
 ```
  class DefaultController < Shivneri::Controller
+  @[DefaultWorker]
+  def index
+    text_result("Welcome to Shivneri")
+  end
 
-    @[DefaultWorker]
-    def index
-        text_result("Welcome to Shivneri")
+  @[Worker("GET")]
+  @[Route("/login")]
+  def get_login_form
+    view_result("default/login.html")
+  end
+
+  @[Worker("POST")]
+  @[Route("/login")]
+  def do_login
+    data = body.to_tuple(NamedTuple(email: String, password: String))
+
+    if (data[:email] == "ujjwal@m.com" && data[:password] == "123")
+      session["email"] = data[:email]
+      text_result("Welcome ujjwal")
+    else
+      text_result("Invalid login data", 400)
     end
-
-    @[Worker("GET")]
-    @[Route("/login")]
-    def get_login_form
-        view_result("default/login.html")
-    end
-
-    @[Worker("POST")]
-    @[Route("/login")]
-    def do_login
-        data = body.to_tuple(NamedTuple(email: String, password: String))
-
-        if (data[:email] == "ujjwal@m.com" && data[:password] == "123")
-            session["email"] = data[:email]
-            text_result("Welcome ujjwal")
-        else
-            text_result("Invalid login data", 400)
-        end
-    end
+  end
 end
 ```
 
@@ -65,23 +64,23 @@ Let's consider that we want to restrict at controller level and for this we need
 
 ```
 class AuthenticationShield < Shivneri::Shield
-    def protect
-        if (!session.is_exist("email"))
-            return redirect_result("/login")
-        end
+  def protect
+    if (!session.is_exist("email"))
+      return redirect_result("/login")
     end
+  end
 end
 ```
 
-Now we can add shield to any controller where we want only authenticated user to access. Let's add this into user controller - 
+Now we can add shield to any controller where we want only authenticated user to access. Let's add this into user controller -
 
 ```
 @[Shields(AuthenticationShield)]
 class UserController < Shivneri::Controller
-    @[DefaultWorker]
-    def index
-        text_result("user is called")
-    end
+  @[DefaultWorker]
+  def index
+    text_result("user is called")
+  end
 end
 ```
 
@@ -90,6 +89,3 @@ Now UserController wont be initiated until AuthenticationShield allows i.e user 
 In the similar way - you can create a [guard](/tutorial/guard) to restrict at worker level.
 
 We have created example for you to understand more but we will recommend you to create a demo by yourself. Here is example link - <a href="https://github.com/ujjwalguptaofficial/shivneri-examples/tree/master/authentication">Authentiction Example</a>
-
-
-

@@ -57,10 +57,10 @@ module Shivneri::Demo
   module Controller
     class DefaultController < Shivneri::Controller
 
-        @[DefaultWorker]
-        def index
-          text_result "Welcome to Shivneri"
-        end
+      @[DefaultWorker]
+      def index
+        text_result "Welcome to Shivneri"
+      end
 
     end
   end
@@ -115,12 +115,12 @@ You will see result "Welcome to Shivneri" which is what we are returning from me
 
 ```
 def json
-    data = {
-      name:    "Ujjwal Gupta",
-      address: "Bengaluru, India",
-    }
+  data = {
+    name:    "Ujjwal Gupta",
+    address: "Bengaluru, India",
+  }
 
-    return json_result(data)
+  return json_result(data)
 end
 ```
 
@@ -142,7 +142,7 @@ end
 
 Let's reload our app again & open the end point - <a href="http://localhost:4000/json" target="_blank">http://localhost:4000/json</a>
 
-You will see your result as json. 
+You will see your result as json.
 
 ### access body data
 

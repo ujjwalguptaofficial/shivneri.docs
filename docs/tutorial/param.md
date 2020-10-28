@@ -12,13 +12,13 @@ e.g - consider the route - "abc.com/{value}/hi" . Here value is a variable and t
 
 ```
 class FileController < Controller
-    
-    @[Route("/scripts/{file}.js")]
-    @[Worker]
-    def get_scripts
-        file_name = param["file"]?
-        return text_result("file name is #{file_name}")
-    end
+
+  @[Route("/scripts/{file}.js")]
+  @[Worker]
+  def get_scripts
+    file_name = param["file"]?
+    return text_result("file name is #{file_name}")
+  end
 
 end
 

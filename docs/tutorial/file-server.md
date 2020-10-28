@@ -8,8 +8,8 @@ Shivneri has in built file server and its very easy to configure
 
 ```
 Shivneri.folders = [{
-    path: "/static",
-    folder:  File.join(Dir.current, "static"),
+  path: "/static",
+  folder:  File.join(Dir.current, "static"),
 }]
 ```
 
@@ -29,20 +29,18 @@ You can expose as many folders as you want.
 You can serve files manually by creating a route
 
 ```
- class FileController < Controller
+class FileController < Controller
 
-    @[Route("/text/{file}.txt")]
-    @[Worker]
-    def get_text_file
-      
-        # get file name from param
-        file_name = param["file"];
+  @[Route("/text/{file}.txt")]
+  @[Worker]
+  def get_text_file
+    # get file name from param
+    file_name = param["file"];
 
-        file_path = File.join(Dir.current, "static/", "#{file_name}.txt")
+    file_path = File.join(Dir.current, "static/", "#{file_name}.txt")
 
-        return file_result(file_path)
-      
-    end
+    return file_result(file_path)
+  end
 
 end
 ```

@@ -9,7 +9,6 @@ WebSocketController is a similar to normal http controller except that it create
 ```
 class ChatController < Shivneri::WebSocketController
    
-   
 end
 ```
 
@@ -22,14 +21,12 @@ Members of WebSocketController is -
 <br>
 ```
 class ChatController < Shivneri::WebSocketController
+  def connected
+    puts "Socket connected & id is #{socket_id}"
+  end
 
-    def connected
-        puts "Socket connected & id is #{socket_id}"
-    end
-
-    def disconnected
-        puts "Socket disconnected"
-    end
-   
+  def disconnected
+    puts "Socket disconnected"
+  end
 end
 ```

@@ -12,11 +12,9 @@ e.g - Let's see how we can pass data from wall to controller -
 
 ```
 class WallWithoutOutgoing < Wall
-
-    def entered
-        self["result_from_wall"] = "this result is from wall"
-    end
-
+  def entered
+    self["result_from_wall"] = "this result is from wall"
+  end
 end
 ```
 
@@ -33,9 +31,7 @@ module Shivneri::Demo
         result_from_wall = self["result_from_wall"].as_s
         text_result "Welcome to Shivneri"
       end
-      
     end
-
   end
 end
 ```

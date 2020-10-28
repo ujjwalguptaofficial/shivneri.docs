@@ -13,25 +13,25 @@ import { Controller, DefaultWorker textResult, viewResult } from "Shivneri";
 import { HttpCookie } from "Shivneri";
 
 export class DefaultController extends Controller {
-    @DefaultWorker()
-    async default() {
-        
-        // check exist
-        const isCookieExist = this.cookie.isExist('cookie_name');
+  @DefaultWorker()
+  async default() {
 
-        // get cookie
-        const cookie = this.cookie.getCookie('cookie_name');
+    // check exist
+    const isCookieExist = this.cookie.isExist('cookie_name');
 
-        //add cookie
-        const newCookie = new HttpCookie('new_cookie','cookie_value');
-        this.cookie.addCookie(newCookie);
+    // get cookie
+    const cookie = this.cookie.getCookie('cookie_name');
 
-        //remove cookie
-        this.cookie.removeCookie('cookie_name');
+    //add cookie
+    const newCookie = new HttpCookie('new_cookie', 'cookie_value');
+    this.cookie.addCookie(newCookie);
 
-        const result = await viewResult('controller:default,action:default');
-        return result;
-    }
+    //remove cookie
+    this.cookie.removeCookie('cookie_name');
+
+    const result = await viewResult('controller:default,action:default');
+    return result;
+  }
 }
 ```
 
