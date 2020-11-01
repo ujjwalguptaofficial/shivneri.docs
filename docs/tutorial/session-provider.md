@@ -94,7 +94,7 @@ class App extends Fort {
 }
 
 new App().create({
-    appName: "MyAwesomeApp"
+  appName: "MyAwesomeApp"
 });
 ```
 

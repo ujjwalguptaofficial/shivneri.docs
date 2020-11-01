@@ -14,15 +14,15 @@ There are two variables in query string - `userid` and `name` . We can use `quer
 
 ```
 class UserController < Shivneri::Controller
-      
-    @[Worker]
-    def add_user()
-        name = query["name"] # this syntax is not recommended because if key is not found then exception will be thrown
 
-        user_id = query["userid"]?
+  @[Worker]
+  def add_user()
+    name = query["name"] # this syntax is not recommended because if key is not found then exception will be thrown
 
-        text_result("ok")
-    end
+    user_id = query["userid"]?
+
+    text_result("ok")
+  end
 end
 ```
 
@@ -32,12 +32,12 @@ query has method `to_tuple` which takes `NamedTuple` type & returns a `NamedTupl
 
 ```
 class UserController < Shivneri::Controller
-       
-      @[Worker]
-      def full_name
-         data = query.to_tuple(NamedTuple(first_name: String, last_name: String))
-        return text_result("full name is #{data.first_name} #{data.last_name}")
-      end
+
+  @[Worker]
+  def full_name
+    data = query.to_tuple(NamedTuple(first_name: String, last_name: String))
+    return text_result("full name is #{data.first_name} #{data.last_name}")
+  end
 end
 ```
-This method is helpful when you are extracting large query string data (have many keys). 
+This method is helpful when you are extracting large query string data (have many keys).

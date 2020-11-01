@@ -12,12 +12,12 @@ Shivneri is a MVC framework which means any route will target a controller metho
 <br>
 ## How to decide what part of route will target controller and worker ?
 <br>
-Consider an url - "abc.com/user/add" and let's split it - 
+Consider an url - "abc.com/user/add" and let's split it -
 
-* abc.com - domain of the website 
+* abc.com - domain of the website
 * /user - controller route
 * /add - worker route
- 
+
 <br>
 Let's take another example - "abc.com/user/1/2/3" and split it again - 
 
@@ -44,7 +44,7 @@ In order to create a controller route we must have a [controller](/tutorial/cont
 
 e.g - Consider you have created a controller, let's say - "UserController".
 
-You need to map Controller with a path. 
+You need to map Controller with a path.
 
 ```
 Shivneri.routes = [{
@@ -66,12 +66,12 @@ e.g -
 When you add annotation "Worker" to a method - it is marked as end point with route "/#{method_name}".
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[Worker]
-    def add
-        return text_result("add is called")
-    end
+class UserController < Shivneri::Controller
+
+  @[Worker]
+  def add
+    return text_result("add is called")
+  end
 
 end
 ```
@@ -85,13 +85,13 @@ So, When url will be - "abc.com/user/add" then add method will be called.
 By default route is name of method, but you can customize it by using annotation "Route".
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[Worker]
-    @[Route("/add-user")]
-    def add
-        return text_result("add is called")
-    end
+class UserController < Shivneri::Controller
+
+  @[Worker]
+  @[Route("/add-user")]
+  def add
+    return text_result("add is called")
+  end
 
 end
 ```
@@ -108,13 +108,13 @@ Currently with any of http methods (GET,POST, etc.) "add" method will be hit. Bu
 In this case - you need to provide desired http methods to Worker annotation. Let's see an example - 
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[Worker("POST")]
-    @[Route("/add-user")]
-    def add
-        return text_result("add is called")
-    end
+class UserController < Shivneri::Controller
+
+  @[Worker("POST")]
+  @[Route("/add-user")]
+  def add
+    return text_result("add is called")
+  end
 
 end
 ```
@@ -126,19 +126,19 @@ end
 How about you want to create a route "add" which will hit different worker based on http methods. This pattern is highly used in rest api implementation . Let's see an example -
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[Worker("GET")]
-    @[Route("/add")]
-    def add_with_get
-        return text_result("add with method get is called")
-    end
+class UserController < Shivneri::Controller
 
-    @[Worker("POST")]
-    @[Route("/add")]
-    def add_with_post
-        return text_result("add with method post is called")
-    end
+  @[Worker("GET")]
+  @[Route("/add")]
+  def add_with_get
+    return text_result("add with method get is called")
+  end
+
+  @[Worker("POST")]
+  @[Route("/add")]
+  def add_with_post
+    return text_result("add with method post is called")
+  end
 
 end
 ```
@@ -155,13 +155,13 @@ So far we have created simple route like - "abc.com/user/add". How about little 
 For this, we just need to modify our route.
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[Worker("POST")]
-    @[Route("/add-user/1")]
-    def add
-        return text_result("add is called")
-    end
+class UserController < Shivneri::Controller
+
+  @[Worker("POST")]
+  @[Route("/add-user/1")]
+  def add
+    return text_result("add is called")
+  end
 
 end
 ```
@@ -171,17 +171,17 @@ e.g - "abc.com/user/add/2", "abc.com/user/add/hi", "abc.com/user/add/1000" etc.
 
 Basically a part of the url is a variable which can hold any value.
 
-You can declare a variable in a route by using `{}` . 
+You can declare a variable in a route by using `{}` .
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[Worker("POST")]
-    @[Route("/add-user/{value}")]
-    def add
-        param_value = param["value"] # param is hash where key is string & value is JSON::Any
-        return text_result("add is called with param #{param_value}")
-    end
+class UserController < Shivneri::Controller
+
+  @[Worker("POST")]
+  @[Route("/add-user/{value}")]
+  def add
+    param_value = param["value"] # param is hash where key is string & value is JSON::Any
+    return text_result("add is called with param #{param_value}")
+  end
 
 end
 ```
@@ -196,17 +196,14 @@ So here :
 * worker route is - 'scripts/jquery.js'
 
 ```
-class FileController < Shivneri::Controller 
-   
-    @[Worker]
-    @[Route("/scripts/{file_name}.js")]
-    def get_scripts
-        file_name = param["file_name"]
-        return text_result("file name is #{file_name}")
-    end
+class FileController < Shivneri::Controller
+
+  @[Worker]
+  @[Route("/scripts/{file_name}.js")]
+  def get_scripts
+    file_name = param["file_name"]
+    return text_result("file name is #{file_name}")
+  end
 
 end
 ```
-
-
-

@@ -12,9 +12,9 @@ e.g - Let's say you want to customize the error response for status code - 404.
 import { ErrorHandler } from "Shivneri";
 
 export class CustomErrorHandler extends ErrorHandler {
-    async onNotFound(url){
-       return `<h1>The resource ${url} does not exist.</h1>`
-    }
+  async onNotFound(url) {
+    return `<h1>The resource ${url} does not exist.</h1>`
+  }
 }
 ```
 
@@ -28,21 +28,21 @@ import { UserController } from "./controllers";
 import { CustomErrorHandler } from "./extra/custom_error_handler";
 
 class App extends Fort {
-    constructor() {
-        super();
-        //add routers
-        this.routers = [{
-            controller: UserController,
-            path: "/user"
-        }];
-        this.errorHandler = CustomErrorHandler;
-    }
+  constructor() {
+    super();
+    //add routers
+    this.routers = [{
+      controller: UserController,
+      path: "/user"
+    }];
+    this.errorHandler = CustomErrorHandler;
+  }
 }
 
 new App().create();
 ```
 
-The methods available for override are - 
+The methods available for override are -
 
 * onServerError(ex: IException): Promise<string>
 * onBadRequest(ex: IException): Promise<string>
@@ -50,11 +50,10 @@ The methods available for override are -
 * onNotAcceptableRequest(): Promise<string>
 * onMethodNotAllowed(): Promise<string>
 * onNotFound(url: string): Promise<string>
-  
+
 <br>
 You can see some methods also have parameters. So its upto you how you want to use those params.
 
 e.g - for onServerError (Status code - 500), you should not show the exception information to users but you should definitely log those errors.
 
 **Note:-** It is highly recommended to create a custom error handler and atleast override the onServerError method and log the exception, otherwise you wont have any information regarding the exception occured.
-

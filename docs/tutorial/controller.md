@@ -6,11 +6,11 @@ Description: "Description about controller in Shivneri"
 
 Controller is like a section or area where different resource & services are available.
 
-e.g - A Fort may have sections - WeaponSection, LibrarySection, MeetingSection etc. 
+e.g - A Fort may have sections - WeaponSection, LibrarySection, MeetingSection etc.
 
 Now consider a real world application created for university may have sections - StudentSection, TeacherSection, LibrarySection etc.
 
-A controller has following members - 
+A controller has following members -
 
 * Query string data - `query`
 * Post data - `post`
@@ -32,7 +32,7 @@ Controller is a class which inherits the class "Controller" from Shivneri.
 ## Example
 
 ```
-class UserController < Shivneri::Controller 
+class UserController < Shivneri::Controller
    
    
 end
@@ -42,8 +42,8 @@ In order to make this controller active, you need to assign it to routes.
 
 ```
 Shivneri.routes = [{
-    controller: UserController,
-    path:       "/user",
+  controller: UserController,
+  path:       "/user",
 }]
 ```
 
