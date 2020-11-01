@@ -12,18 +12,15 @@ The `logger` is a class member of all components i.e controller, shield, wall, g
 
 ```
 class UserController < Shivneri::Controller
-      
-    @[Worker]
-    def add_user
 
-        logger.debug("add_user called")
+  @[Worker]
+  def add_user
 
-        logger.info("add_user called")
-
-        logger.error("add_user called")
-
-        text_result("ok")
-    end
+    logger.debug("add_user called")
+    logger.info("add_user called")
+    logger.error("add_user called")
+    text_result("ok")
+  end
 end
 ```
 
@@ -32,24 +29,24 @@ end
 logger can also be customized, so that log data can be saved in file or database. Logger can be customized very easily by creating a class & extending `Logger` 
 
 ```
-class CustomLogger < Shivneri::Logger 
-   
-    def info(*args)
-    
-    end
+class CustomLogger < Shivneri::Logger
 
-    def error(*args)
-    
-    end
+  def info(*args)
 
-    def debug(*args)
-    
-    end
-    
+  end
+
+  def error(*args)
+
+  end
+
+  def debug(*args)
+
+  end
+
 end
 ```
 
-Now you need to tell Framework to use your logger - 
+Now you need to tell Framework to use your logger -
 
 ```
 Shivneri.logger = CustomLogger
@@ -57,7 +54,7 @@ Shivneri.logger = CustomLogger
 
 
 
-Logger has following methods available - 
+Logger has following methods available -
 
 * debug(*args)
 * info(*args)

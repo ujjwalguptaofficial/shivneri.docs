@@ -30,17 +30,16 @@ A method is marked as Worker by using annoation - `Worker` or `DefaultWorker`.
 ## Example
 
 ```
-class UserController < Shivneri::Controller 
-   
-    @[DefaultWorker]
-    def default
-       return text_result("This is default worker for section user")
-    end
+class UserController < Shivneri::Controller
+  @[DefaultWorker]
+  def default
+    return text_result("This is default worker for section user")
+  end
 
-    @[Worker]
-    def get_user
-        return text_result("This is a worker for section user")
-    end
+  @[Worker]
+  def get_user
+    return text_result("This is a worker for section user")
+  end
 
 end
 ```
@@ -54,7 +53,7 @@ So what these annotations - `Worker` and `DefaultWorker` do ?
 * **DefaultWorker** - method having annotation DefaultWorker is added to route with one http method GET and route is "/".
 
 <br>
-So in the above example, when url will be - 
+So in the above example, when url will be -
 
 * abc.com/user - method default will be called.
 * abc.com/user/get\_user - method get\_user will be called.

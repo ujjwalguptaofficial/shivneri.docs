@@ -12,7 +12,7 @@ json result is returned by `json_result`
 
 ```
 data = {
-    name: "Ujjwal Gupta"
+  name: "Ujjwal Gupta"
 }
 json_result(data)
 ```
@@ -42,7 +42,7 @@ file_path = File.join(Dir.current, "static/scripts/", "jquery.js")
 file_result(file_path)
 ```
 
-## download 
+## download
 
 How about you want to return a file which will be downloaded by browser. For this you need to use `download_result`
 
@@ -52,8 +52,3 @@ download result is similar to file_result but it instruct browser to download th
 file_path = File.join(Dir.current, "static/scripts/", "jquery.js")
 download_result(file_path)
 ```
-
-
-
-
-
